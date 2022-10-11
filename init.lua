@@ -1,10 +1,12 @@
-local function get_snippets()
+local function search_with_same_name()
 	M = require("lua.snips")
-	M.get_fileType()
-	M.get_word_under_cursor()
+	T = require("lua.telescope")
+	local fileName = M.get_fileName()
+	T.open_telescope(fileName)
+
 end
 
 return {
-	get_snippets = get_snippets
+	search_with_same_name = search_with_same_name
 }
 
