@@ -1,9 +1,8 @@
 local function search_with_same_name()
-	M = require("lua.simi")
-	T = require("lua.telescope")
+	M = require("utils")
 	local fileName = M.get_fileName()
-	T.open_telescope(fileName)
-
+    print(fileName)
+	require("telescope.builtin").find_files({default_text = opts})
 end
 
 return {
