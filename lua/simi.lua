@@ -1,8 +1,7 @@
 local function search_with_same_name()
 	M = require("utils")
 	local fileName = M.get_fileName()
-    print(fileName)
-	require("telescope.builtin").find_files({default_text = opts})
+	require("telescope.builtin").find_files({default_text = fileName})
 end
 
 return {
