@@ -1,22 +1,12 @@
-local M = {}
+local function search_with_same_name()
+	M = require("lua.simi")
+	T = require("lua.telescope")
+	local fileName = M.get_fileName()
+	T.open_telescope(fileName)
 
-function M.get_fileName()
-	local fileName = vim.bo.filetype
-	local fileName=vim.fn.expand('%:t:r>')
-	-- print(fileName)
-	return fileName
 end
 
-function M.get_fileType()
-	local filetype = vim.bo.filetype
-	print(filetype)
-end
+return {
+	search_with_same_name = search_with_same_name
+}
 
-
-function M.get_word_under_cursor()
-	word=vim.fn.expand('<cword>')
-	print(word)
-end
-
--- return M
-return M
