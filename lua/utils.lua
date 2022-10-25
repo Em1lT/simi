@@ -3,7 +3,6 @@ local M = {}
 function M.get_fileName()
 	local fileName = vim.bo.filetype
 	local fileName=vim.fn.expand('%:t:r>')
-	-- print(fileName)
 	return fileName
 end
 
@@ -15,7 +14,7 @@ end
 
 function M.get_word_under_cursor()
 	word=vim.fn.expand('<cword>')
-	print(word)
+	return word
 end
 
 -- return M
