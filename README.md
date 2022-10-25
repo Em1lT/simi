@@ -3,7 +3,7 @@ Neovim plugin to fast search files with similar names.
 
 ## Required dependencies
 
-[Telescope](https://github.com/https://github.com/nvim-telescope/telescope.nvim).
+[Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 ## How to use
 
