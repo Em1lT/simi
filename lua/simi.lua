@@ -12,6 +12,6 @@ end
 
 return {
 	search_with_same_name = search_with_same_name,
-	search_with_name_under_cursor = search_with_name_under_cursor 
+	search_with_name_under_cursor = search_with_name_under_cursor
 }
 
