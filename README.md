@@ -16,3 +16,20 @@ If you have multiple files with similar names. for exampe index.ts index.test.ts
 
 	search_with_name_under_cursor()
 
+
+## Getting started
+
+ - install with packer 
+```
+return require('packer').startup(function(use)
+     use 'Em1lT/simi'
+
+ end)
+```
+
+ - After installing open file and type into vim commandline 
+```
+:lua require('simi').search_with_same_name()
+```
+
+
