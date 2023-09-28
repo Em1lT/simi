@@ -7,7 +7,7 @@ end
 
 local function search_with_name_under_cursor()
 	local word = M.get_word_under_cursor()
-	require("telescope.builtin").find_files({default_text = word})
+	require("telescope.builtin").live_grep({default_text = word})
 end
 
 return {
